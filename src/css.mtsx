@@ -1,0 +1,564 @@
+{
+    name: ["CSS", ".css"]
+    styles: [
+        "css:propKey",       #5F95A1, #AEF1FF, @_
+        "css:propValue",     #FF7F4B, #FF7F4B, @_
+        "css:propValue2",    #C37657, #C37657, @_
+        "css:tagSelector",   #82C192, #A6FFBD, @_
+        "css:classSelector", #D7BA7D, #D7BA7D, @_
+        "css:idSelector",    #D3A0FF, #D3A0FF, @_
+        "css:psSelector",    #8A8F4D, #F1FA8C, @_
+        "css:atRules",       #979100, #FFF500, @_
+        "css:number",        #80EFFF, #80EFFF, @_
+        "css:unit",          #D3A0FF, #D3A0FF, @_
+        "css:keyword",       #57AFFF, #57AFFF, @_
+        "css:string",        #00FFE9, #00FFE9, @_
+        "css:important",     #000000, #FFFFFF, @BU
+        "css:black",                #ffffff#000000,   #ffffff#000000
+        "css:silver",               #3f3f3f#c0c0c0,   #3f3f3f#c0c0c0
+        "css:gray",                 #7f7f7f#808080,   #7f7f7f#808080
+        "css:white",                #000000#ffffff,   #000000#ffffff
+        "css:maroon",               #7fffff#800000,   #7fffff#800000
+        "css:red",                  #00ffff#ff0000,   #00ffff#ff0000
+        "css:purple",               #7fff7f#800080,   #7fff7f#800080
+        "css:fuchsia",              #00ff00#ff00ff,   #00ff00#ff00ff
+        "css:green",                #ff7fff#008000,   #ff7fff#008000
+        "css:lime",                 #ff00ff#00ff00,   #ff00ff#00ff00
+        "css:olive",                #7f7fff#808000,   #7f7fff#808000
+        "css:yellow",               #0000ff#ffff00,   #0000ff#ffff00
+        "css:navy",                 #ffff7f#000080,   #ffff7f#000080
+        "css:blue",                 #ffff00#0000ff,   #ffff00#0000ff
+        "css:teal",                 #ff7f7f#008080,   #ff7f7f#008080
+        "css:aqua",                 #ff0000#00ffff,   #ff0000#00ffff
+        "css:aliceblue",            #0f0700#f0f8ff,   #0f0700#f0f8ff
+        "css:antiquewhite",         #051428#faebd7,   #051428#faebd7
+        "css:aquamarine",           #80002b#7fffd4,   #80002b#7fffd4
+        "css:azure",                #0f0000#f0ffff,   #0f0000#f0ffff
+        "css:beige",                #0a0a23#f5f5dc,   #0a0a23#f5f5dc
+        "css:bisque",               #001b3b#ffe4c4,   #001b3b#ffe4c4
+        "css:blanchedalmond",       #001432#ffebcd,   #001432#ffebcd
+        "css:blueviolet",           #75d41d#8a2be2,   #75d41d#8a2be2
+        "css:brown",                #5ad5d5#a52a2a,   #5ad5d5#a52a2a
+        "css:burlywood",            #214778#deb887,   #214778#deb887
+        "css:cadetblue",            #a0615f#5f9ea0,   #a0615f#5f9ea0
+        "css:chartreuse",           #8000ff#7fff00,   #8000ff#7fff00
+        "css:chocolate",            #2d96e1#d2691e,   #2d96e1#d2691e
+        "css:coral",                #0080af#ff7f50,   #0080af#ff7f50
+        "css:cornflowerblue",       #9b6a12#6495ed,   #9b6a12#6495ed
+        "css:cornsilk",             #000723#fff8dc,   #000723#fff8dc
+        "css:crimson",              #23ebc3#dc143c,   #23ebc3#dc143c
+        "css:cyan",                 #ff0000#00ffff,   #ff0000#00ffff
+        "css:darkblue",             #ffff74#00008b,   #ffff74#00008b
+        "css:darkcyan",             #ff7474#008b8b,   #ff7474#008b8b
+        "css:darkgoldenrod",        #4779f4#b8860b,   #4779f4#b8860b
+        "css:darkgray",             #565656#a9a9a9,   #565656#a9a9a9
+        "css:darkgreen",            #ff9bff#006400,   #ff9bff#006400
+        "css:darkgrey",             #565656#a9a9a9,   #565656#a9a9a9
+        "css:darkkhaki",            #424894#bdb76b,   #424894#bdb76b
+        "css:darkmagenta",          #74ff74#8b008b,   #74ff74#8b008b
+        "css:darkolivegreen",       #aa94d0#556b2f,   #aa94d0#556b2f
+        "css:darkorange",           #0073ff#ff8c00,   #0073ff#ff8c00
+        "css:darkorchid",           #66cd33#9932cc,   #66cd33#9932cc
+        "css:darkred",              #74ffff#8b0000,   #74ffff#8b0000
+        "css:darksalmon",           #166985#e9967a,   #166985#e9967a
+        "css:darkseagreen",         #704370#8fbc8f,   #704370#8fbc8f
+        "css:darkslateblue",        #b7c274#483d8b,   #b7c274#483d8b
+        "css:darkslategray",        #d0b0b0#2f4f4f,   #d0b0b0#2f4f4f
+        "css:darkslategrey",        #d0b0b0#2f4f4f,   #d0b0b0#2f4f4f
+        "css:darkturquoise",        #ff312e#00ced1,   #ff312e#00ced1
+        "css:darkviolet",           #6bff2c#9400d3,   #6bff2c#9400d3
+        "css:deeppink",             #00eb6c#ff1493,   #00eb6c#ff1493
+        "css:deepskyblue",          #ff4000#00bfff,   #ff4000#00bfff
+        "css:dimgray",              #969696#696969,   #969696#696969
+        "css:dimgrey",              #969696#696969,   #969696#696969
+        "css:dodgerblue",           #e16f00#1e90ff,   #e16f00#1e90ff
+        "css:firebrick",            #4ddddd#b22222,   #4ddddd#b22222
+        "css:floralwhite",          #00050f#fffaf0,   #00050f#fffaf0
+        "css:forestgreen",          #dd74dd#228b22,   #dd74dd#228b22
+        "css:gainsboro",            #232323#dcdcdc,   #232323#dcdcdc
+        "css:ghostwhite",           #070700#f8f8ff,   #070700#f8f8ff
+        "css:gold",                 #0028ff#ffd700,   #0028ff#ffd700
+        "css:goldenrod",            #255adf#daa520,   #255adf#daa520
+        "css:greenyellow",          #5200d0#adff2f,   #5200d0#adff2f
+        "css:grey",                 #7f7f7f#808080,   #7f7f7f#808080
+        "css:honeydew",             #0f000f#f0fff0,   #0f000f#f0fff0
+        "css:hotpink",              #00964b#ff69b4,   #00964b#ff69b4
+        "css:indianred",            #32a3a3#cd5c5c,   #32a3a3#cd5c5c
+        "css:indigo",               #b4ff7d#4b0082,   #b4ff7d#4b0082
+        "css:ivory",                #00000f#fffff0,   #00000f#fffff0
+        "css:khaki",                #0f1973#f0e68c,   #0f1973#f0e68c
+        "css:lavender",             #191905#e6e6fa,   #191905#e6e6fa
+        "css:lavenderblush",        #000f0a#fff0f5,   #000f0a#fff0f5
+        "css:lawngreen",            #8303ff#7cfc00,   #8303ff#7cfc00
+        "css:lemonchiffon",         #000532#fffacd,   #000532#fffacd
+        "css:lightblue",            #522719#add8e6,   #522719#add8e6
+        "css:lightcoral",           #0f7f7f#f08080,   #0f7f7f#f08080
+        "css:lightcyan",            #1f0000#e0ffff,   #1f0000#e0ffff
+        "css:lightgoldenrodyellow", #05052d#fafad2,   #05052d#fafad2
+        "css:lightgray",            #2c2c2c#d3d3d3,   #2c2c2c#d3d3d3
+        "css:lightgreen",           #6f116f#90ee90,   #6f116f#90ee90
+        "css:lightgrey",            #2c2c2c#d3d3d3,   #2c2c2c#d3d3d3
+        "css:lightpink",            #00493e#ffb6c1,   #00493e#ffb6c1
+        "css:lightsalmon",          #005f85#ffa07a,   #005f85#ffa07a
+        "css:lightseagreen",        #df4d55#20b2aa,   #df4d55#20b2aa
+        "css:lightskyblue",         #783105#87cefa,   #783105#87cefa
+        "css:lightslategray",       #887766#778899,   #887766#778899
+        "css:lightslategrey",       #887766#778899,   #887766#778899
+        "css:lightsteelblue",       #4f3b21#b0c4de,   #4f3b21#b0c4de
+        "css:lightyellow",          #00001f#ffffe0,   #00001f#ffffe0
+        "css:limegreen",            #cd32cd#32cd32,   #cd32cd#32cd32
+        "css:linen",                #050f19#faf0e6,   #050f19#faf0e6
+        "css:magenta",              #00ff00#ff00ff,   #00ff00#ff00ff
+        "css:mediumaquamarine",     #993255#66cdaa,   #993255#66cdaa
+        "css:mediumblue",           #ffff32#0000cd,   #ffff32#0000cd
+        "css:mediumorchid",         #45aa2c#ba55d3,   #45aa2c#ba55d3
+        "css:mediumpurple",         #6c8f24#9370db,   #6c8f24#9370db
+        "css:mediumseagreen",       #c34c8e#3cb371,   #c34c8e#3cb371
+        "css:mediumslateblue",      #849711#7b68ee,   #849711#7b68ee
+        "css:mediumspringgreen",    #ff0565#00fa9a,   #ff0565#00fa9a
+        "css:mediumturquoise",      #b72e33#48d1cc,   #b72e33#48d1cc
+        "css:mediumvioletred",      #38ea7a#c71585,   #38ea7a#c71585
+        "css:midnightblue",         #e6e68f#191970,   #e6e68f#191970
+        "css:mintcream",            #0a0005#f5fffa,   #0a0005#f5fffa
+        "css:mistyrose",            #001b1e#ffe4e1,   #001b1e#ffe4e1
+        "css:moccasin",             #001b4a#ffe4b5,   #001b4a#ffe4b5
+        "css:navajowhite",          #002152#ffdead,   #002152#ffdead
+        "css:oldlace",              #020a19#fdf5e6,   #020a19#fdf5e6
+        "css:olivedrab",            #9471dc#6b8e23,   #9471dc#6b8e23
+        "css:orange",               #005aff#ffa500,   #005aff#ffa500
+        "css:orangered",            #00baff#ff4500,   #00baff#ff4500
+        "css:orchid",               #258f29#da70d6,   #258f29#da70d6
+        "css:palegoldenrod",        #111755#eee8aa,   #111755#eee8aa
+        "css:palegreen",            #670467#98fb98,   #670467#98fb98
+        "css:paleturquoise",        #501111#afeeee,   #501111#afeeee
+        "css:palevioletred",        #248f6c#db7093,   #248f6c#db7093
+        "css:papayawhip",           #00102a#ffefd5,   #00102a#ffefd5
+        "css:peachpuff",            #002546#ffdab9,   #002546#ffdab9
+        "css:peru",                 #327ac0#cd853f,   #327ac0#cd853f
+        "css:pink",                 #003f34#ffc0cb,   #003f34#ffc0cb
+        "css:plum",                 #225f22#dda0dd,   #225f22#dda0dd
+        "css:powderblue",           #4f1f19#b0e0e6,   #4f1f19#b0e0e6
+        "css:rebeccapurple",        #99cc66#663399,   #99cc66#663399
+        "css:rosybrown",            #437070#bc8f8f,   #437070#bc8f8f
+        "css:royalblue",            #be961e#4169e1,   #be961e#4169e1
+        "css:saddlebrown",          #74baec#8b4513,   #74baec#8b4513
+        "css:salmon",               #057f8d#fa8072,   #057f8d#fa8072
+        "css:sandybrown",           #0b5b9f#f4a460,   #0b5b9f#f4a460
+        "css:seagreen",             #d174a8#2e8b57,   #d174a8#2e8b57
+        "css:seashell",             #000a11#fff5ee,   #000a11#fff5ee
+        "css:sienna",               #5fadd2#a0522d,   #5fadd2#a0522d
+        "css:skyblue",              #783114#87ceeb,   #783114#87ceeb
+        "css:slateblue",            #95a532#6a5acd,   #95a532#6a5acd
+        "css:slategray",            #8f7f6f#708090,   #8f7f6f#708090
+        "css:slategrey",            #8f7f6f#708090,   #8f7f6f#708090
+        "css:snow",                 #000505#fffafa,   #000505#fffafa
+        "css:springgreen",          #ff0080#00ff7f,   #ff0080#00ff7f
+        "css:steelblue",            #b97d4b#4682b4,   #b97d4b#4682b4
+        "css:tan",                  #2d4b73#d2b48c,   #2d4b73#d2b48c
+        "css:thistle",              #274027#d8bfd8,   #274027#d8bfd8
+        "css:tomato",               #009cb8#ff6347,   #009cb8#ff6347
+        "css:transparent",          #FFF#00000000,    #000#00000000
+        "css:turquoise",            #bf1f2f#40e0d0,   #bf1f2f#40e0d0
+        "css:violet",               #117d11#ee82ee,   #117d11#ee82ee
+        "css:wheat",                #0a214c#f5deb3,   #0a214c#f5deb3
+        "css:whitesmoke",           #0a0a0a#f5f5f5,   #0a0a0a#f5f5f5
+        "css:yellowgreen",          #6532cd#9acd32,   #6532cd#9acd32
+    ]
+    comment: {startsWith: "/*", endsWith: "*/", insertSpace: false}
+    ignoreCase: true
+    defines: [
+        "html:tagsKeywords": keywordsToRegex("html body a code div em h1 h2 h3 h4 h5 h6 img li ol p pre span table th td tr ul")
+        "css:propKeyKeywords": keywordsToRegex(
+            "all anchor-name appearance aspect-ratio backdrop-filter backface-visibility block-size bottom caption-side caret-color clear columns cursor cx cy d direction display dominant-baseline empty-cells field-sizing filter float flood-color flood-opacity forced-color-adjust gap hanging-punctuation height hyphenate-character hyphenate-limit-chars hyphens initial-letter inline-size interpolate-size isolation left letter-spacing lighting-color mix-blend-mode object-fit object-position opacity order orphans overlay paint-order perspective perspective-origin pointer-events print-color-adjust quotes r resize right rotate row-gap ruby-align ruby-position rx ry scale stop-color stop-opacity tab-size table-layout timeline-scope top touch-action translate unicode-bidi user-modify user-select vector-effect vertical-align visibility white-space white-space-collapse widows width will-change word-break word-spacing writing-mode x y z-index zoom"
+            
+            // -moz-* 非标准 部分弃用
+            "-moz-float-edge -moz-force-broken-image-icon -moz-image-region -moz-orient -moz-user-focus -moz-user-input"
+            
+            // -webkit-* 非标准
+            "-webkit-border-before -webkit-box-reflect -webkit-line-clamp -webkit-mask-box-image -webkit-mask-composite -webkit-mask-position-x -webkit-mask-position-y -webkit-mask-repeat-x -webkit-mask-repeat-y -webkit-tap-highlight-color -webkit-text-fill-color -webkit-text-security -webkit-text-stroke -webkit-text-stroke-color -webkit-text-stroke-width -webkit-touch-callout"
+            
+            // accent-color 强调色
+            "accent-color"
+            
+            // align-* 弹性盒子布局和网格布局属性
+            "align-content align-items align-self"
+            
+            // animation-* 动画
+            "animation animation-composition animation-delay animation-direction animation-duration animation-fill-mode animation-iteration-count animation-name animation-play-state animation-rangeExperimental animation-range-endExperimental animation-range-startExperimental animation-timelineExperimental animation-timing-function"
+            
+            // background-* 背景
+            "background background-attachment background-blend-mode background-clip background-color background-image background-origin background-position background-position-x background-position-y background-repeat background-size"
+            
+            // border-* 边框
+            "border border-block border-block-color border-block-end border-block-end-color border-block-end-style border-block-end-width border-block-start border-block-start-color border-block-start-style border-block-start-width border-block-style border-block-width border-bottom border-bottom-color border-bottom-left-radius border-bottom-right-radius border-bottom-style border-bottom-width border-collapse border-color border-end-end-radius border-end-start-radius border-image border-image-outset border-image-repeat border-image-slice border-image-source border-image-width border-inline border-inline-color border-inline-end border-inline-end-color border-inline-end-style border-inline-end-width border-inline-start border-inline-start-color border-inline-start-style border-inline-start-width border-inline-style border-inline-width border-left border-left-color border-left-style border-left-width border-radius border-right border-right-color border-right-style border-right-width border-spacing border-start-end-radius border-start-start-radius border-style border-top border-top-color border-top-left-radius border-top-right-radius border-top-style border-top-width border-width"
+            
+            // box-* 非标准 部分弃用
+            "box-alignNon box-decoration-break box-directionNon box-flexNon box-flex-groupNon box-linesNon box-ordinal-groupNon box-orientNon box-packNon box-shadow box-sizing"
+            
+            // break-*
+            "break-after break-before break-inside"
+            
+            // clip-* 部分弃用
+            "clip clip-path clip-rule"
+            
+            // color-* 设置颜色
+            "color color-interpolation color-interpolation-filters color-scheme"
+            
+            // column-*
+            "column-count column-fill column-gap column-rule column-rule-color column-rule-style column-rule-width column-span column-width"
+            
+            // contain-*
+            "contain contain-intrinsic-block-size contain-intrinsic-height contain-intrinsic-inline-size contain-intrinsic-size contain-intrinsic-width"
+            
+            // container-*
+            "container container-name container-type"
+
+            // fill-*
+            "fill fill-opacity fill-rule"
+            
+            // flex-*
+            "flex flex-basis flex-direction flex-flow flex-grow flex-shrink flex-wrap"
+            
+            // font-*
+            "font font-family font-feature-settings font-kerning font-language-override font-optical-sizing font-palette font-size font-size-adjust font-smooth非标准 font-stretch font-style font-synthesis font-synthesis-position实验性 font-synthesis-small-caps font-synthesis-style font-synthesis-weight font-variant font-variant-alternates font-variant-caps font-variant-east-asian font-variant-emoji font-variant-ligatures font-variant-numeric font-variant-position font-variation-settings font-weight"
+            
+            // grid-*
+            "grid grid-area grid-auto-columns grid-auto-flow grid-auto-rows grid-column grid-column-end grid-column-start grid-row grid-row-end grid-row-start grid-template grid-template-areas grid-template-columns grid-template-rows"
+            
+            // image-*
+            "image-orientation image-rendering image-resolution"
+            
+            // inset-*
+            "inset inset-block inset-block-end inset-block-start inset-inline inset-inline-end inset-inline-start"
+            
+            // justify-*
+            "justify-content justify-items justify-self"
+            
+            // line-*
+            "line-break line-height line-height-step"
+            
+            // list-*
+            "list-style list-style-image list-style-position list-style-type"
+            
+            // margin-*
+            "margin margin-block margin-block-end margin-block-start margin-bottom margin-inline margin-inline-end margin-inline-start margin-left margin-right margin-top margin-trim"
+            
+            // marker-*
+            "marker marker-end marker-mid marker-start"
+            
+            // mask-*
+            "mask mask-border mask-border-mode mask-border-outset mask-border-repeat mask-border-slice mask-border-source mask-border-width mask-clip mask-composite mask-image mask-mode mask-origin mask-position mask-repeat mask-size mask-type"
+            
+            // math-*
+            "math-depth math-shift math-style"
+            
+            // max-*
+            "max-block-size max-height max-inline-size max-width"
+            
+            // min-*
+            "min-block-size min-height min-inline-size min-width"
+            
+            // offset-*
+            "offset offset-anchor offset-distance offset-path offset-position offset-rotate"
+            
+            // outline-*
+            "outline outline-color outline-offset outline-style outline-width"
+            
+            // overflow-*
+            "overflow overflow-anchor overflow-block overflow-clip-margin overflow-inline overflow-wrap overflow-x overflow-y"
+            
+            // overscroll-*
+            "overscroll-behavior overscroll-behavior-block overscroll-behavior-inline overscroll-behavior-x overscroll-behavior-y"
+            
+            // padding-*
+            "padding padding-block padding-block-end padding-block-start padding-bottom padding-inline padding-inline-end padding-inline-start padding-left padding-right padding-top"
+            
+            // page-*
+            "page page-break-after page-break-before page-break-inside"
+            
+            // place-*
+            "place-content place-items place-self"
+            
+            // position-*
+            "position position-anchor position-area position-try position-try-fallbacks position-try-order position-visibility"
+            
+            // scroll-*
+            "scroll-behavior scroll-margin scroll-margin-block scroll-margin-block-end scroll-margin-block-start scroll-margin-bottom scroll-margin-inline scroll-margin-inline-end scroll-margin-inline-start scroll-margin-left scroll-margin-right scroll-margin-top scroll-padding scroll-padding-block scroll-padding-block-end scroll-padding-block-start scroll-padding-bottom scroll-padding-inline scroll-padding-inline-end scroll-padding-inline-start scroll-padding-left scroll-padding-right scroll-padding-top scroll-snap-align scroll-snap-stop scroll-snap-type scroll-timeline scroll-timeline-axis scroll-timeline-name"
+            
+            // scrollbar-*
+            "scrollbar-color scrollbar-gutter scrollbar-width"
+            
+            // shape-*
+            "shape-image-threshold shape-margin shape-outside shape-rendering"
+            
+            // stroke-*
+            "stroke stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width"
+            
+            // text-*
+            "text-align text-align-last text-anchor text-combine-upright text-decoration text-decoration-color text-decoration-line text-decoration-skip text-decoration-skip-ink text-decoration-style text-emphasis text-emphasis-color text-emphasis-position text-emphasis-style text-indent text-justify text-orientation text-overflow text-shadow text-size-adjust text-spacing-trim text-transform text-underline-offset text-underline-position text-wrap text-wrap-mode text-wrap-style"
+            
+            // transform-*
+            "transform transform-box transform-origin transform-style"
+            
+            // transition-*
+            "transition transition-behavior transition-delay transition-duration transition-property transition-timing-function"
+            
+            // view-*
+            "view-timeline view-timeline-axis view-timeline-inset view-timeline-name view-transition-name"
+        )
+        "css:propValueKeywords": keywordsToRegex(
+            "xx-small xx-large x-soft x-small x-slow x-low x-loud x-large x-high x-fast wider wait w-resize visible url uppercase"
+            "upper-roman upper-latin upper-alpha underline ultra-expanded ultra-condensed tv tty transparent top thin thick text-top"
+            "text-bottom table-row-group table-row table-header-group table-footer-group table-column-group table-column table-cell"
+            "table-caption sw-resize super sub status-bar static square spell-out speech solid soft smaller small-caption small-caps"
+            "small slower slow silent show separate semi-expanded semi-condensed se-resize scroll screen s-resize run-in rtl narrower"
+            "right-side right ridge rgb rgba repeat-y repeat-x repeat relative projection print pre portrait pointer overline outside"
+            "outset open-quote once oblique nw-resize nowrap normal none no-repeat no-open-quote no-close-quote ne-resize rightwards"
+            "n-resize menlo monospace tahoma verdana arial helvetica sans-serif serif courier mono sans move mix middle message-box"
+            "medium marker ltr lowercase lower-roman lower-latin lower-greek lower-alpha lower low loud local list-item line-through"
+            "lighter level leftwards left-side left larger large landscape justify italic invert inside inset inline-table inline icon"
+            "higher high hide hidden help hebrew handheld groove format fixed faster fast far-right far-left fantasy extra-expanded"
+            "extra-condensed expanded embossed embed e-resize double dotted disc digits default decimal-leading-zero decimal dashed"
+            "cursive crosshair cross crop counters counter continuous condensed compact collapse code close-quote circle center-right"
+            "center-left center caption capitalize braille bottom both bolder bold block blink bidi-override below behind baseline"
+            "avoid auto aural attr armenian always all absolute above cover content-box border-box"
+            )
+        "css:unit": /(?:Q|c(?:ap|h|m|qb|qh|qi|qmax|qmin|qw)|e(?:m|x)|i(?:c|n)|lh|mm|p(?:c|t|x)|r(?:cap|ch|em|ex|ic|lh)|v(?:b|h|i|max|min|w))/
+        // keywordsToRegex(
+            // "cm mm Q in pc pt px"
+            // "cap ch em ex ic lh rcap rch rem rex ric rlh vh vw vmax vmin vb vi"
+            // "cqw cqh cqi cqb cqmin cqmax"
+        // )
+        "css:propColor": [
+            {match: /\bblack\b/                0: "css:black"               }
+            {match: /\bsilver\b/               0: "css:silver"              }
+            {match: /\bgray\b/                 0: "css:gray"                }
+            {match: /\bwhite\b/                0: "css:white"               }
+            {match: /\bmaroon\b/               0: "css:maroon"              }
+            {match: /\bred\b/                  0: "css:red"                 }
+            {match: /\bpurple\b/               0: "css:purple"              }
+            {match: /\bfuchsia\b/              0: "css:fuchsia"             }
+            {match: /\bgreen\b/                0: "css:green"               }
+            {match: /\blime\b/                 0: "css:lime"                }
+            {match: /\bolive\b/                0: "css:olive"               }
+            {match: /\byellow\b/               0: "css:yellow"              }
+            {match: /\bnavy\b/                 0: "css:navy"                }
+            {match: /\bblue\b/                 0: "css:blue"                }
+            {match: /\bteal\b/                 0: "css:teal"                }
+            {match: /\baqua\b/                 0: "css:aqua"                }
+            {match: /\baliceblue\b/            0: "css:aliceblue"           }
+            {match: /\bantiquewhite\b/         0: "css:antiquewhite"        }
+            {match: /\baquamarine\b/           0: "css:aquamarine"          }
+            {match: /\bazure\b/                0: "css:azure"               }
+            {match: /\bbeige\b/                0: "css:beige"               }
+            {match: /\bbisque\b/               0: "css:bisque"              }
+            {match: /\bblanchedalmond\b/       0: "css:blanchedalmond"      }
+            {match: /\bblueviolet\b/           0: "css:blueviolet"          }
+            {match: /\bbrown\b/                0: "css:brown"               }
+            {match: /\bburlywood\b/            0: "css:burlywood"           }
+            {match: /\bcadetblue\b/            0: "css:cadetblue"           }
+            {match: /\bchartreuse\b/           0: "css:chartreuse"          }
+            {match: /\bchocolate\b/            0: "css:chocolate"           }
+            {match: /\bcoral\b/                0: "css:coral"               }
+            {match: /\bcornflowerblue\b/       0: "css:cornflowerblue"      }
+            {match: /\bcornsilk\b/             0: "css:cornsilk"            }
+            {match: /\bcrimson\b/              0: "css:crimson"             }
+            {match: /\bcyan\b/                 0: "css:cyan"                }
+            {match: /\bdarkblue\b/             0: "css:darkblue"            }
+            {match: /\bdarkcyan\b/             0: "css:darkcyan"            }
+            {match: /\bdarkgoldenrod\b/        0: "css:darkgoldenrod"       }
+            {match: /\bdarkgray\b/             0: "css:darkgray"            }
+            {match: /\bdarkgreen\b/            0: "css:darkgreen"           }
+            {match: /\bdarkgrey\b/             0: "css:darkgrey"            }
+            {match: /\bdarkkhaki\b/            0: "css:darkkhaki"           }
+            {match: /\bdarkmagenta\b/          0: "css:darkmagenta"         }
+            {match: /\bdarkolivegreen\b/       0: "css:darkolivegreen"      }
+            {match: /\bdarkorange\b/           0: "css:darkorange"          }
+            {match: /\bdarkorchid\b/           0: "css:darkorchid"          }
+            {match: /\bdarkred\b/              0: "css:darkred"             }
+            {match: /\bdarksalmon\b/           0: "css:darksalmon"          }
+            {match: /\bdarkseagreen\b/         0: "css:darkseagreen"        }
+            {match: /\bdarkslateblue\b/        0: "css:darkslateblue"       }
+            {match: /\bdarkslategray\b/        0: "css:darkslategray"       }
+            {match: /\bdarkslategrey\b/        0: "css:darkslategrey"       }
+            {match: /\bdarkturquoise\b/        0: "css:darkturquoise"       }
+            {match: /\bdarkviolet\b/           0: "css:darkviolet"          }
+            {match: /\bdeeppink\b/             0: "css:deeppink"            }
+            {match: /\bdeepskyblue\b/          0: "css:deepskyblue"         }
+            {match: /\bdimgray\b/              0: "css:dimgray"             }
+            {match: /\bdimgrey\b/              0: "css:dimgrey"             }
+            {match: /\bdodgerblue\b/           0: "css:dodgerblue"          }
+            {match: /\bfirebrick\b/            0: "css:firebrick"           }
+            {match: /\bfloralwhite\b/          0: "css:floralwhite"         }
+            {match: /\bforestgreen\b/          0: "css:forestgreen"         }
+            {match: /\bgainsboro\b/            0: "css:gainsboro"           }
+            {match: /\bghostwhite\b/           0: "css:ghostwhite"          }
+            {match: /\bgold\b/                 0: "css:gold"                }
+            {match: /\bgoldenrod\b/            0: "css:goldenrod"           }
+            {match: /\bgreenyellow\b/          0: "css:greenyellow"         }
+            {match: /\bgrey\b/                 0: "css:grey"                }
+            {match: /\bhoneydew\b/             0: "css:honeydew"            }
+            {match: /\bhotpink\b/              0: "css:hotpink"             }
+            {match: /\bindianred\b/            0: "css:indianred"           }
+            {match: /\bindigo\b/               0: "css:indigo"              }
+            {match: /\bivory\b/                0: "css:ivory"               }
+            {match: /\bkhaki\b/                0: "css:khaki"               }
+            {match: /\blavender\b/             0: "css:lavender"            }
+            {match: /\blavenderblush\b/        0: "css:lavenderblush"       }
+            {match: /\blawngreen\b/            0: "css:lawngreen"           }
+            {match: /\blemonchiffon\b/         0: "css:lemonchiffon"        }
+            {match: /\blightblue\b/            0: "css:lightblue"           }
+            {match: /\blightcoral\b/           0: "css:lightcoral"          }
+            {match: /\blightcyan\b/            0: "css:lightcyan"           }
+            {match: /\blightgoldenrodyellow\b/ 0: "css:lightgoldenrodyellow"}
+            {match: /\blightgray\b/            0: "css:lightgray"           }
+            {match: /\blightgreen\b/           0: "css:lightgreen"          }
+            {match: /\blightgrey\b/            0: "css:lightgrey"           }
+            {match: /\blightpink\b/            0: "css:lightpink"           }
+            {match: /\blightsalmon\b/          0: "css:lightsalmon"         }
+            {match: /\blightseagreen\b/        0: "css:lightseagreen"       }
+            {match: /\blightskyblue\b/         0: "css:lightskyblue"        }
+            {match: /\blightslategray\b/       0: "css:lightslategray"      }
+            {match: /\blightslategrey\b/       0: "css:lightslategrey"      }
+            {match: /\blightsteelblue\b/       0: "css:lightsteelblue"      }
+            {match: /\blightyellow\b/          0: "css:lightyellow"         }
+            {match: /\blimegreen\b/            0: "css:limegreen"           }
+            {match: /\blinen\b/                0: "css:linen"               }
+            {match: /\bmagenta\b/              0: "css:magenta"             }
+            {match: /\bmediumaquamarine\b/     0: "css:mediumaquamarine"    }
+            {match: /\bmediumblue\b/           0: "css:mediumblue"          }
+            {match: /\bmediumorchid\b/         0: "css:mediumorchid"        }
+            {match: /\bmediumpurple\b/         0: "css:mediumpurple"        }
+            {match: /\bmediumseagreen\b/       0: "css:mediumseagreen"      }
+            {match: /\bmediumslateblue\b/      0: "css:mediumslateblue"     }
+            {match: /\bmediumspringgreen\b/    0: "css:mediumspringgreen"   }
+            {match: /\bmediumturquoise\b/      0: "css:mediumturquoise"     }
+            {match: /\bmediumvioletred\b/      0: "css:mediumvioletred"     }
+            {match: /\bmidnightblue\b/         0: "css:midnightblue"        }
+            {match: /\bmintcream\b/            0: "css:mintcream"           }
+            {match: /\bmistyrose\b/            0: "css:mistyrose"           }
+            {match: /\bmoccasin\b/             0: "css:moccasin"            }
+            {match: /\bnavajowhite\b/          0: "css:navajowhite"         }
+            {match: /\boldlace\b/              0: "css:oldlace"             }
+            {match: /\bolivedrab\b/            0: "css:olivedrab"           }
+            {match: /\borange\b/               0: "css:orange"              }
+            {match: /\borangered\b/            0: "css:orangered"           }
+            {match: /\borchid\b/               0: "css:orchid"              }
+            {match: /\bpalegoldenrod\b/        0: "css:palegoldenrod"       }
+            {match: /\bpalegreen\b/            0: "css:palegreen"           }
+            {match: /\bpaleturquoise\b/        0: "css:paleturquoise"       }
+            {match: /\bpalevioletred\b/        0: "css:palevioletred"       }
+            {match: /\bpapayawhip\b/           0: "css:papayawhip"          }
+            {match: /\bpeachpuff\b/            0: "css:peachpuff"           }
+            {match: /\bperu\b/                 0: "css:peru"                }
+            {match: /\bpink\b/                 0: "css:pink"                }
+            {match: /\bplum\b/                 0: "css:plum"                }
+            {match: /\bpowderblue\b/           0: "css:powderblue"          }
+            {match: /\brebeccapurple\b/        0: "css:rebeccapurple"       }
+            {match: /\brosybrown\b/            0: "css:rosybrown"           }
+            {match: /\broyalblue\b/            0: "css:royalblue"           }
+            {match: /\bsaddlebrown\b/          0: "css:saddlebrown"         }
+            {match: /\bsalmon\b/               0: "css:salmon"              }
+            {match: /\bsandybrown\b/           0: "css:sandybrown"          }
+            {match: /\bseagreen\b/             0: "css:seagreen"            }
+            {match: /\bseashell\b/             0: "css:seashell"            }
+            {match: /\bsienna\b/               0: "css:sienna"              }
+            {match: /\bskyblue\b/              0: "css:skyblue"             }
+            {match: /\bslateblue\b/            0: "css:slateblue"           }
+            {match: /\bslategray\b/            0: "css:slategray"           }
+            {match: /\bslategrey\b/            0: "css:slategrey"           }
+            {match: /\bsnow\b/                 0: "css:snow"                }
+            {match: /\bspringgreen\b/          0: "css:springgreen"         }
+            {match: /\bsteelblue\b/            0: "css:steelblue"           }
+            {match: /\btan\b/                  0: "css:tan"                 }
+            {match: /\bthistle\b/              0: "css:thistle"             }
+            {match: /\btomato\b/               0: "css:tomato"              }
+            {match: /\btransparent\b/          0: "css:transparent"         }
+            {match: /\bturquoise\b/            0: "css:turquoise"           }
+            {match: /\bviolet\b/               0: "css:violet"              }
+            {match: /\bwheat\b/                0: "css:wheat"               }
+            {match: /\bwhitesmoke\b/           0: "css:whitesmoke"          }
+            {match: /\byellowgreen\b/          0: "css:yellowgreen"         }
+        ]
+        "css:string": [
+            {
+                style: "css:string"
+                start: {match: /'/}
+                end: {match: /(?m)'|$/}
+                contains: [{match: /\\./, 0: "strEscape"}]
+            }
+            {
+                style: "css:string"
+                start: {match: /"/}
+                end: {match: /(?m)"|$/}
+                contains: [{match: /\\./, 0: "strEscape"}]
+            }
+        ]
+        "css:propKey": [
+            {match: include("css:propKeyKeywords"), 0: "css:propKey"}
+            {match: /--[\w\-]+/, 0: "css:keyword"}
+        ]
+        "css:propValue": [
+                {include: "css:string"}
+                {include: "css:atRules"}
+                {match: /\b(\d+(?:\.\d+)?)(/+include("css:unit")+/\b|%)?/, 1: "css:number" 2: "css:unit"}
+                {match: /#([a-fA-F0-9]{3,6})\b/, 0: "parseColor(auto,1,HEX)"}
+                {match: /(rgb)(\([^\)]*\))/, 1: "css:propValue" 2: "parseColor(auto,2,rgb)"}
+                {match: /(rgba)(\([^\)]*\))/, 1: "css:propValue" 2: "parseColor(auto,2,rgba)"}
+                {match: /(hsl)(\([^\)]*\))/, 1: "css:propValue" 2: "parseColor(auto,2,hsl)"}
+                {match: keywordsToRegex("hwb lab lch oklab oklch") 0: "css:propValue"}
+                {match: include("css:propValueKeywords"), 0: "css:propValue"}
+                {include: "css:propColor"}
+                {match: /!important/, 0: "css:important"}
+                {match: /[\w\-]+/, 0: "css:propValue2"}
+        ]
+        "css:selectorAttr":{
+            start: {match: /\[/}
+            end: {match: /\]/}
+            contains: [
+                {group: link contains: [
+                    {match: /[\w\-]+/ 0:"css:tagSelector"}
+                    {match: keywordsToRegex("= ~= |= ^= $= *=") 0: "none"}
+                    {group: select contains: [
+                        {include: "css:string"}
+                        {match: /\d+/, 0: "number"}
+                        {match: /[\w\-]+/, 0: "propValue"}
+                    ]}
+                ]}
+            ]
+        }
+        "css:atRules": {match: /@[\w\-]+/, 0: "css:atRules"}
+        "css:selector": [
+            {match: include("html:tagsKeywords"), 0: "css:tagSelector"}
+            {match: /\.[\w\-]+/, 0: "css:classSelector"}
+            {match: /#[\w\-]+/, 0: "css:idSelector"}
+            {match: /::?[\w\-]+/, 0: "css:psSelector"}
+            {include: "css:atRules"}
+            {include: "css:selectorAttr"}
+        ]
+        "css": [
+            {include: "css:selector"}
+            {
+                start: {match: /\{/}
+                end: {match: /\}/}
+                contains: [
+                    // 默认的comment仅在最外层进行匹配，要在start与end之间匹配注释的话需要单独添加规则
+                    {match: "(?s)/\\*.*?\\*/", 0: "comment"}
+                    {group: link contains: [
+                        {include:"css:propKey"}
+                        {
+                            start: {match: /\s*:/}
+                            end: {match: /;/}
+                            contains: [{include:"css:propValue"}]
+                        }
+                    ]}
+                ]
+            }
+        ]
+    ]
+    contains: [
+        {include: "css"}
+    ]
+    codeFormatter: #BUILT_IN_CSS_FORMATTER#
+    codeShrinker: #BUILT_IN_CSS_SHRINKER#
+}
