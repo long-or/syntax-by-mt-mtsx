@@ -1,0 +1,131 @@
+{
+    name: ["JavaScript", ".js", ".es"]
+    styles: [
+        "js:var",            #31616C, #AEF1FF, @_
+        "js:symbol",         #FF7F4B, #FF7821, @_
+        "js:esc",            #C37657, #C37657, @_
+        "js:class",          #82C192, #A6FFBD, @_
+        "js:function",       #979100, #FFEAA4, @_
+        "js:number",         #50C1D1, #FBFF5B, @_
+        "js:keyword",        #824AB2, #C082F5, @_
+        "js:def",            #57AFFF, #2A9AFF, @_
+        "js:this",           #533B89, #9C42FF, @_
+        "js:string",         #4EA037, #8CFF6D, @_
+        "js:none",           #000000, #FFFFFF, @BU
+    ]
+    comment: {startsWith: "//"}
+    defines: [
+        "js:defKeyword": keywordsToRegex("function var let const")
+        "js:keyword": keywordsToRegex("break case catch continue debugger default delete do else export extends false finally for if import in instanceof new null return super switch this throw true try typeof void while with static yield")
+        "js:symbol": keywordsToRegex(
+            "=> ? : ?. ."
+            "= += -= *= /=  %= **= <<= >>= >>>= &= ^= |= &&= ||= ??="
+            "== === != !== > >= <= "
+            "% ++ -- + - * / **"
+            "& | ^ ~ << >> >>> && || ?? !"
+            )
+        "js:doc": {
+            style: "comment"
+            matchEndFirst: true
+            start: {match: /\/\*/}
+            end: {match: /\*\/|$/}
+            contains: [
+                {match: /@\w+/, 0: "js:def"}
+                {
+                    style: "js:keyword"
+                    start: {match: /\{/}
+                    end: {match: /\}|$/}
+                    contains: []
+                }
+                {match: /(?<=\}) *.*/ 0: "ParName"}
+            ]
+        }
+        "js:class": keywordsToRegex(
+            "Overview AggregateError ArrayBuffer AsyncFunction AsyncGenerator AsyncGeneratorFunction AsyncIterator BigInt BigInt64Array BigUint64Array DataView decodeURI decodeURIComponent encodeURI encodeURIComponent escape Deprecated eval EvalError FinalizationRegistry Float16Array Float32Array Float64Array GeneratorFunction globalThis Int16Array Int32Array Int8Array InternalErrorNon-standard isFinite isNaN JSON NaN parseFloat parseInt Promise RangeError ReferenceError RegExp SharedArrayBuffer SyntaxError TypedArray TypeError Uint16 Uint32Array Uint8Array Uint8ClampedArray undefined unescape Deprecated URIError WeakMap WeakRef WeakSet"
+            "Proxy Function Atomics Reflect Intl String Object Number Math Boolean Array Infinity Date Map Generator Symbol Iterator Error Set"
+        )
+        "js:number": [
+            {match: /(0b)([01_]{1,40})(n)?/, 1: "js:keyword" 2: "js:number" 3:"js:keyword"}
+            {match: /(0o)([0-8_]{1,40})(n)?/, 1: "js:keyword" 2: "js:number" 3:"js:keyword"}
+            {match: /(0x)([0-9a-fA-F_]{1,40})(n)?/, 1: "js:keyword" 2: "js:number" 3:"js:keyword"}
+            {match: /\.[0-9_]{1,40}(?:[eE][+-]?[0-9]{1,5})?/, 0: "js:number"}
+            {match: /([0-9_]{1,40})(?:(n)|(\.[0-9_]{1,40}(?:[eE][+-]?[0-9]{1,5})?))?/, 1: "js:number" 2:"js:keyword" 3:"js:number"}
+        ]
+        "js:esc": [
+            {match: /\\x[0-9a-fA-F]{2}/, 0: "js:esc"}
+            {match: /\\u[0-9a-fA-F]{4}/, 0: "js:esc"}
+            {match: /\\[0'"\\nrvtbf\n]/, 0: "js:esc"}
+            {match: /\\u\{\w+\}/, 0: "js:esc"}
+            {match: /\\./, 0: "error"}
+        ]
+        "js:string": [
+            {
+                style: "js:string"
+                start: {match: /'/}
+                end: {match: /(?m)'|$/}
+                contains: [{include: "js:esc"}]
+            }
+            {
+                style: "js:string"
+                start: {match: /"/}
+                end: {match: /(?m)"|$/}
+                contains: [{include: "js:esc"}]
+            }
+        ]
+        "js:backtick-string": {
+            style: "js:string"
+            start: {match: /`/}
+            end: {match: /`/}
+            contains: [
+                {match: /\\`/, 0: "js:esc"}
+                {include: "js:esc"}
+                {include: "dollarExp"}
+            ]
+        }
+        "js:regex": {
+            start: {match: /(?<=(?:[=,(&|!:;]|^|\breturn)\s{0,20})/ + "/"}
+            end: {match: "/" + /([img]{1,3})/, 1: "operator"}
+            style: "meta"
+            contains: [
+                {match: /\\./, 0: "strEscape"}
+                {
+                    start: {match: /\[/}
+                    end: {match: /\]/}
+                    contains: [
+                        {match: /\\./, 0: "strEscape"}
+                    ]
+                }
+            ]
+        }
+        "dollarExp": {
+            start: {match: /\$\{/}
+            end: {match: /\}/}
+            style: "strEscape"
+            contains: [
+                {include: "js:string"}
+                {include: "js:regex"}
+                {include: "js:backtick-string"}
+                {include: "dollarExp"}
+            ]
+        }
+        "js": [
+            {include: "js:doc"}
+            {include: "js:string"}
+            {include: "js:backtick-string"}
+            {include: "js:number"}
+            {match: /\basync(?=\s+function\b)/, 0: "js:keyword"}
+            {match: /this\b/ 0: "js:this"}
+            {match: include("js:defKeyword") 0: "js:def"}
+            {match: include("js:keyword") 0: "js:keyword"}
+            {match: include("js:class") 0: "js:class"}
+            {include: "js:regex"}
+            {match: /(?<![=\+\-\/*])/ + include("js:symbol") + /(?![=\+\-\/*])/ 0: "js:symbol"}
+            {match: /(\w+)\(/, 1: "js:function"}
+            {match: /\w+/, 0: "js:var"}
+        ]
+    ]
+    contains: [
+        {include: "js"}
+    ]
+    codeFormatter: #BUILT_IN_JS_FORMATTER#
+}
